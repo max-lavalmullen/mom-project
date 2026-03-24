@@ -1,3 +1,9 @@
 .DS_Store
 *.png
 *.jpg
+
+# Secrets — never commit real keys
+.env
+.env.local
+.env.production
+.env.*.local
