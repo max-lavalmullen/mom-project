@@ -1,0 +1,48 @@
+.elo-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars-container {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.elo-star {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.elo-star.filled {
+  color: var(--secondary);
+}
+
+.elo-star.empty {
+  color: var(--border);
+}
+
+.elo-star.half {
+  position: relative;
+  display: inline-block;
+  color: var(--border);
+}
+
+.elo-star.half .half-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  color: var(--secondary);
+}
+
+.elo-star.half .half-empty {
+  color: var(--border);
+}
+
+.elo-score {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}

@@ -1,0 +1,39 @@
+.platform-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.platform-chip {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.platform-chip:hover {
+  color: var(--text-primary);
+  border-color: var(--text-muted);
+}
+
+.platform-chip.active {
+  color: white;
+  background-color: var(--platform-color, var(--primary));
+  border-color: var(--platform-color, var(--primary));
+}
+
+.platform-chip.all {
+  --platform-color: var(--primary);
+}
+
+@media (max-width: 480px) {
+  .platform-chip {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+}

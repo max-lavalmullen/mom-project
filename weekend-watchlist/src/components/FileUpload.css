@@ -1,0 +1,120 @@
+.file-upload-container {
+  width: 100%;
+}
+
+.file-upload-zone {
+  border: 2px dashed var(--border-color, #374151);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--bg-secondary, #1f2937);
+}
+
+.file-upload-zone:hover:not(.disabled) {
+  border-color: var(--primary-color, #3b82f6);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.file-upload-zone.dragging {
+  border-color: var(--primary-color, #3b82f6);
+  background: rgba(59, 130, 246, 0.1);
+  transform: scale(1.01);
+}
+
+.file-upload-zone.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-upload-zone.has-file {
+  border-style: solid;
+  border-color: var(--success-color, #22c55e);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-icon {
+  font-size: 2.5rem;
+  opacity: 0.6;
+}
+
+.upload-text {
+  color: var(--text-secondary, #9ca3af);
+  margin: 0;
+}
+
+.upload-link {
+  color: var(--primary-color, #3b82f6);
+  font-weight: 500;
+}
+
+.upload-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted, #6b7280);
+  margin: 0;
+}
+
+.file-selected {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.file-icon {
+  font-size: 2rem;
+}
+
+.file-info {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--text-primary, #f9fafb);
+  word-break: break-all;
+}
+
+.file-size {
+  font-size: 0.75rem;
+  color: var(--text-muted, #6b7280);
+}
+
+.file-clear-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary, #9ca3af);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.file-clear-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error-color, #ef4444);
+}
+
+.file-upload-error {
+  color: var(--error-color, #ef4444);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}

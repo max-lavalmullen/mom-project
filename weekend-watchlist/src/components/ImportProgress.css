@@ -1,0 +1,109 @@
+.import-progress {
+  background: var(--bg-secondary, #1f2937);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.import-progress.complete {
+  border: 1px solid var(--success-color, #22c55e);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+.import-progress.error {
+  border: 1px solid var(--error-color, #ef4444);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.progress-stage {
+  font-weight: 600;
+  color: var(--text-primary, #f9fafb);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stage-icon {
+  font-size: 1.25rem;
+}
+
+.import-progress.complete .stage-icon {
+  color: var(--success-color, #22c55e);
+}
+
+.import-progress.error .stage-icon {
+  color: var(--error-color, #ef4444);
+}
+
+.progress-percent {
+  font-weight: 500;
+  color: var(--text-secondary, #9ca3af);
+}
+
+.progress-bar-container {
+  height: 8px;
+  background: var(--bg-tertiary, #374151);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--primary-color, #3b82f6);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.import-progress.complete .progress-bar-fill {
+  background: var(--success-color, #22c55e);
+}
+
+.import-progress.error .progress-bar-fill {
+  background: var(--error-color, #ef4444);
+}
+
+.progress-message {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #9ca3af);
+}
+
+.progress-detail {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--text-muted, #6b7280);
+}
+
+.progress-error {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: var(--error-color, #ef4444);
+}
+
+.progress-spinner {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.spinner-ring {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--bg-tertiary, #374151);
+  border-top-color: var(--primary-color, #3b82f6);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

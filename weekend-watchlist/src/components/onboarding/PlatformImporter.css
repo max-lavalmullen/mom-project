@@ -1,0 +1,138 @@
+.platform-importer {
+  text-align: center;
+}
+
+.platform-importer.empty {
+  padding: 3rem;
+  color: var(--text-muted, #6b7280);
+}
+
+.platform-importer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.platform-importer .step-description {
+  color: var(--text-secondary, #9ca3af);
+  margin-bottom: 1.5rem;
+}
+
+.import-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.import-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary, #1f2937);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-secondary, #9ca3af);
+  font-size: 0.875rem;
+}
+
+.import-tab:hover {
+  background: var(--bg-tertiary, #374151);
+}
+
+.import-tab.active {
+  border-color: var(--primary-color, #3b82f6);
+  color: var(--text-primary, #f9fafb);
+}
+
+.import-tab.complete {
+  border-color: var(--success-color, #22c55e);
+}
+
+.tab-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.tab-name {
+  font-weight: 500;
+}
+
+.tab-check {
+  color: var(--success-color, #22c55e);
+  font-weight: bold;
+}
+
+.import-panel {
+  background: var(--bg-secondary, #1f2937);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.import-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.import-header h4 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.instructions-toggle {
+  background: none;
+  border: none;
+  color: var(--primary-color, #3b82f6);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0;
+}
+
+.instructions-toggle:hover {
+  text-decoration: underline;
+}
+
+.instructions-panel {
+  background: var(--bg-tertiary, #374151);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.instructions-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #9ca3af);
+}
+
+.instructions-list li {
+  margin-bottom: 0.5rem;
+}
+
+.instructions-list li:last-child {
+  margin-bottom: 0;
+}
+
+.import-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.import-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.import-success p {
+  color: var(--success-color, #22c55e);
+  font-weight: 500;
+  margin: 0;
+}

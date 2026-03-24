@@ -1,0 +1,139 @@
+.setup-page {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.setup-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.setup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.setup-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.setup-header > p {
+  color: var(--text-secondary, #9ca3af);
+  margin-bottom: 2rem;
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--bg-secondary, #1f2937);
+  color: var(--text-muted, #6b7280);
+  transition: all 0.2s;
+}
+
+.step-number.active {
+  background: var(--primary-color, #3b82f6);
+  color: white;
+}
+
+.step-number.completed {
+  background: var(--success-color, #22c55e);
+  color: white;
+}
+
+.step-label {
+  font-size: 0.75rem;
+  color: var(--text-muted, #6b7280);
+  margin-left: 0.5rem;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .step-label {
+    display: block;
+  }
+
+  .step-label.active {
+    color: var(--text-primary, #f9fafb);
+    font-weight: 500;
+  }
+}
+
+.step-line {
+  width: 40px;
+  height: 2px;
+  background: var(--bg-tertiary, #374151);
+  margin: 0 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .step-line {
+    width: 60px;
+  }
+}
+
+.step-line.active {
+  background: var(--success-color, #22c55e);
+}
+
+.setup-content {
+  background: var(--bg-primary, #111827);
+  border: 1px solid var(--border-color, #374151);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.setup-error {
+  color: var(--error-color, #ef4444);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.setup-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.action-spacer {
+  flex: 1;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #9ca3af);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.btn-ghost:hover {
+  color: var(--text-primary, #f9fafb);
+}
+
+.btn-ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

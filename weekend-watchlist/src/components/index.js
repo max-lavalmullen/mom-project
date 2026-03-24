@@ -1,0 +1,5 @@
+export { default as Header } from './Header'
+export { default as WatchlistCard } from './WatchlistCard'
+export { default as PlatformFilter } from './PlatformFilter'
+export { default as GenreFilter } from './GenreFilter'
+export { default as UserPreferences } from './UserPreferences'
